@@ -1,10 +1,50 @@
 {
   "schema_version": 1,
-  "updated_at": null,
+  "updated_at": "2026-09-25T09:46:14+10:00",
   "timezone": "Australia/Sydney",
-  "markets": {},
-  "errors": {},
+  "markets": {
+    "au2y": {
+      "name": "AU 2Y",
+      "value": 4.999,
+      "unit": "%",
+      "observation_date": "2026-09-16",
+      "change_1d": -1.09,
+      "change_1w": 3.39,
+      "change_1m": 9.53,
+      "source": "Reserve Bank of Australia — F2",
+      "source_url": "https://www.rba.gov.au/statistics/tables/",
+      "status": "ok"
+    },
+    "au10y": {
+      "name": "AU 10Y",
+      "value": 5.348,
+      "unit": "%",
+      "observation_date": "2026-09-16",
+      "change_1d": -1.16,
+      "change_1w": 2.81,
+      "change_1m": 6.3,
+      "source": "Reserve Bank of Australia — F2",
+      "source_url": "https://www.rba.gov.au/statistics/tables/",
+      "status": "ok"
+    }
+  },
+  "errors": {
+    "sp500": "No observations for S&P 500",
+    "nasdaq": "No observations for Nasdaq Composite",
+    "asx200": "No observations for Australian equities (All Ordinaries)",
+    "audusd": "No observations for AUD/USD",
+    "eurusd": "No observations for EUR/USD",
+    "usdjpy": "No observations for USD/JPY",
+    "gold": "No observations for Gold",
+    "wti": "No observations for WTI crude",
+    "brent": "No observations for Brent crude",
+    "copper": "No observations for Copper",
+    "us2y": "No observations for US 2Y",
+    "us10y": "No observations for US 10Y"
+  },
   "notes": [
-    "Initial placeholder. Run the GitHub Action to populate market data."
+    "This feed is for a personal market-learning dashboard, not trading or valuation.",
+    "Australian government yields use the latest RBA F2 observation available; F2 is published weekly with a lag.",
+    "The Australian equity public fallback is All Ordinaries until a dependable no-key public ASX 200 feed is validated."
   ]
 }

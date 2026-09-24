@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "updated_at": "2026-09-25T09:46:14+10:00",
+    "markets": {
+      "au2y": {
+        "name": "AU 2Y",
+        "value": 4.999,
+        "unit": "%",
+        "observation_date": "2026-09-16",
+        "change_1d": -1.09,
+        "change_1w": 3.39,
+        "change_1m": 9.53,
+        "source": "Reserve Bank of Australia — F2",
+        "source_url": "https://www.rba.gov.au/statistics/tables/",
+        "status": "ok"
+      },
+      "au10y": {
+        "name": "AU 10Y",
+        "value": 5.348,
+        "unit": "%",
+        "observation_date": "2026-09-16",
+        "change_1d": -1.16,
+        "change_1w": 2.81,
+        "change_1m": 6.3,
+        "source": "Reserve Bank of Australia — F2",
+        "source_url": "https://www.rba.gov.au/statistics/tables/",
+        "status": "ok"
+      }
+    }
+  }
+]
