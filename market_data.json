@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-25T09:46:14+10:00",
+  "updated_at": "2026-09-25T09:52:46+10:00",
   "timezone": "Australia/Sydney",
   "markets": {
     "au2y": {
@@ -13,7 +13,10 @@
       "change_1m": 9.53,
       "source": "Reserve Bank of Australia — F2",
       "source_url": "https://www.rba.gov.au/statistics/tables/",
-      "status": "ok"
+      "status": "ok",
+      "change_1d_bp": -5.5,
+      "change_1w_bp": 16.4,
+      "change_1m_bp": 43.5
     },
     "au10y": {
       "name": "AU 10Y",
@@ -25,7 +28,10 @@
       "change_1m": 6.3,
       "source": "Reserve Bank of Australia — F2",
       "source_url": "https://www.rba.gov.au/statistics/tables/",
-      "status": "ok"
+      "status": "ok",
+      "change_1d_bp": -6.3,
+      "change_1w_bp": 14.6,
+      "change_1m_bp": 31.7
     }
   },
   "errors": {
