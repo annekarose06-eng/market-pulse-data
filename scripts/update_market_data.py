@@ -147,7 +147,26 @@ for key, fn in feeds:
 
 try:
     au2, au10 = rba_f2()
-    markets["au2y"]=au2; markets["au10y"]=au10
+
+    # For government bond yields, show movements in basis points
+    # rather than percentage changes in the yield itself.
+    for rec, key in [(au2, "au2y"), (au10, "au10y")]:
+        current = rec["value"]
+
+        # Convert the existing percentage changes back into prior yields,
+        # then express the movement in basis points.
+        for period, bp_key in [
+            ("change_1d", "change_1d_bp"),
+            ("change_1w", "change_1w_bp"),
+            ("change_1m", "change_1m_bp")
+        ]:
+            pct_change = rec.get(period)
+
+            if pct_change is not None:
+                previous = current / (1 + pct_change / 100)
+                rec[bp_key] = round((current - previous) * 100, 1)
+
+        markets[key] = rec
 except Exception as e:
     errors["rba_f2"]=str(e)
     for key in ("au2y","au10y"):
