@@ -1,8 +1,128 @@
 {
-  "schema_version": 1,
-  "updated_at": "2026-09-25T09:52:46+10:00",
+  "schema_version": 2,
+  "updated_at": "2026-09-25T10:03:33+10:00",
   "timezone": "Australia/Sydney",
   "markets": {
+    "sp500": {
+      "name": "S&P 500",
+      "value": 7704.129883,
+      "unit": "index",
+      "observation_date": "2026-09-24",
+      "change_1d": -0.02,
+      "change_1w": 2.02,
+      "change_1m": 0.39,
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/quote/^GSPC",
+      "status": "ok"
+    },
+    "nasdaq": {
+      "name": "Nasdaq Composite",
+      "value": 26939.373047,
+      "unit": "index",
+      "observation_date": "2026-09-24",
+      "change_1d": 0.01,
+      "change_1w": 3.7,
+      "change_1m": 2.9,
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/quote/^IXIC",
+      "status": "ok"
+    },
+    "asx200": {
+      "name": "S&P/ASX 200",
+      "value": 8765.299805,
+      "unit": "index",
+      "observation_date": "2026-09-23",
+      "change_1d": 0.38,
+      "change_1w": 1.07,
+      "change_1m": -3.24,
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/quote/^AXJO",
+      "status": "ok"
+    },
+    "audusd": {
+      "name": "AUD/USD",
+      "value": 0.700722,
+      "unit": "USD",
+      "observation_date": "2026-09-25",
+      "change_1d": -0.38,
+      "change_1w": -1.52,
+      "change_1m": -2.21,
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/quote/AUDUSD=X",
+      "status": "ok"
+    },
+    "eurusd": {
+      "name": "EUR/USD",
+      "value": 1.137656,
+      "unit": "USD",
+      "observation_date": "2026-09-25",
+      "change_1d": -0.05,
+      "change_1w": -0.87,
+      "change_1m": -2.55,
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/quote/EURUSD=X",
+      "status": "ok"
+    },
+    "usdjpy": {
+      "name": "USD/JPY",
+      "value": 158.768997,
+      "unit": "JPY",
+      "observation_date": "2026-09-25",
+      "change_1d": 0.32,
+      "change_1w": 1.69,
+      "change_1m": -0.29,
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/quote/JPY=X",
+      "status": "ok"
+    },
+    "gold": {
+      "name": "Gold",
+      "value": 4304.799805,
+      "unit": "USD/oz",
+      "observation_date": "2026-09-24",
+      "change_1d": -0.31,
+      "change_1w": -2.16,
+      "change_1m": -8.37,
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/quote/GC=F",
+      "status": "ok"
+    },
+    "wti": {
+      "name": "WTI crude",
+      "value": 93.970001,
+      "unit": "USD/bbl",
+      "observation_date": "2026-09-24",
+      "change_1d": 1.96,
+      "change_1w": -7.79,
+      "change_1m": 10.54,
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/quote/CL=F",
+      "status": "ok"
+    },
+    "brent": {
+      "name": "Brent crude",
+      "value": 106.080002,
+      "unit": "USD/bbl",
+      "observation_date": "2026-09-24",
+      "change_1d": 2.91,
+      "change_1w": 1.2,
+      "change_1m": 15.09,
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/quote/BZ=F",
+      "status": "ok"
+    },
+    "copper": {
+      "name": "Copper",
+      "value": 6.7705,
+      "unit": "USD/lb",
+      "observation_date": "2026-09-24",
+      "change_1d": 1.39,
+      "change_1w": 2.79,
+      "change_1m": 2.6,
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/quote/HG=F",
+      "status": "ok"
+    },
     "au2y": {
       "name": "AU 2Y",
       "value": 4.999,
@@ -35,22 +155,12 @@
     }
   },
   "errors": {
-    "sp500": "No observations for S&P 500",
-    "nasdaq": "No observations for Nasdaq Composite",
-    "asx200": "No observations for Australian equities (All Ordinaries)",
-    "audusd": "No observations for AUD/USD",
-    "eurusd": "No observations for EUR/USD",
-    "usdjpy": "No observations for USD/JPY",
-    "gold": "No observations for Gold",
-    "wti": "No observations for WTI crude",
-    "brent": "No observations for Brent crude",
-    "copper": "No observations for Copper",
-    "us2y": "No observations for US 2Y",
-    "us10y": "No observations for US 10Y"
+    "us2y": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=40)",
+    "us10y": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=40)"
   },
   "notes": [
-    "This feed is for a personal market-learning dashboard, not trading or valuation.",
-    "Australian government yields use the latest RBA F2 observation available; F2 is published weekly with a lag.",
-    "The Australian equity public fallback is All Ordinaries until a dependable no-key public ASX 200 feed is validated."
+    "Daily public-data snapshot for a personal market-learning dashboard; not for trading.",
+    "Yahoo Finance is used for traded-market daily closes; FRED for US Treasury yields; RBA F2 for Australian government yields.",
+    "Observation dates are preserved because different markets and sources close or publish at different times."
   ]
 }
