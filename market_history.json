@@ -7617,5 +7617,190 @@
         "change_1m_bp": -27.3
       }
     }
+  },
+  {
+    "updated_at": "2026-11-23T12:11:06+11:00",
+    "markets": {
+      "sp500": {
+        "name": "S&P 500",
+        "value": 6910.390137,
+        "unit": "index",
+        "observation_date": "2026-11-20",
+        "change_1d": -3.7,
+        "change_1w": -8.61,
+        "change_1m": -10.92,
+        "source": "Yahoo Finance",
+        "source_url": "https://finance.yahoo.com/quote/^GSPC",
+        "status": "ok"
+      },
+      "nasdaq": {
+        "name": "Nasdaq Composite",
+        "value": 22617.730469,
+        "unit": "index",
+        "observation_date": "2026-11-20",
+        "change_1d": -5.28,
+        "change_1w": -10.02,
+        "change_1m": -15.3,
+        "source": "Yahoo Finance",
+        "source_url": "https://finance.yahoo.com/quote/^IXIC",
+        "status": "ok"
+      },
+      "asx200": {
+        "name": "S&P/ASX 200",
+        "value": 8590.5,
+        "unit": "index",
+        "observation_date": "2026-11-23",
+        "change_1d": -0.02,
+        "change_1w": -5.02,
+        "change_1m": -2.31,
+        "source": "Yahoo Finance",
+        "source_url": "https://finance.yahoo.com/quote/^AXJO",
+        "status": "ok"
+      },
+      "audusd": {
+        "name": "AUD/USD",
+        "value": 0.665203,
+        "unit": "USD",
+        "observation_date": "2026-11-23",
+        "change_1d": -0.06,
+        "change_1w": -1.87,
+        "change_1m": -5.37,
+        "source": "Yahoo Finance",
+        "source_url": "https://finance.yahoo.com/quote/AUDUSD=X",
+        "status": "ok"
+      },
+      "eurusd": {
+        "name": "EUR/USD",
+        "value": 1.098539,
+        "unit": "USD",
+        "observation_date": "2026-11-23",
+        "change_1d": 0.14,
+        "change_1w": -0.36,
+        "change_1m": -2.22,
+        "source": "Yahoo Finance",
+        "source_url": "https://finance.yahoo.com/quote/EURUSD=X",
+        "status": "ok"
+      },
+      "usdjpy": {
+        "name": "USD/JPY",
+        "value": 158.852997,
+        "unit": "JPY",
+        "observation_date": "2026-11-23",
+        "change_1d": -0.53,
+        "change_1w": -0.58,
+        "change_1m": 0.46,
+        "source": "Yahoo Finance",
+        "source_url": "https://finance.yahoo.com/quote/JPY=X",
+        "status": "ok"
+      },
+      "gold": {
+        "name": "Gold",
+        "value": 3572.899902,
+        "unit": "USD/oz",
+        "observation_date": "2026-11-22",
+        "change_1d": 1.64,
+        "change_1w": -7.27,
+        "change_1m": -12.01,
+        "source": "Yahoo Finance",
+        "source_url": "https://finance.yahoo.com/quote/GC=F",
+        "status": "ok"
+      },
+      "wti": {
+        "name": "WTI crude",
+        "value": 82.739998,
+        "unit": "USD/bbl",
+        "observation_date": "2026-11-22",
+        "change_1d": -1.48,
+        "change_1w": -3.48,
+        "change_1m": -16.82,
+        "source": "Yahoo Finance",
+        "source_url": "https://finance.yahoo.com/quote/CL=F",
+        "status": "ok"
+      },
+      "brent": {
+        "name": "Brent crude",
+        "value": 89.129997,
+        "unit": "USD/bbl",
+        "observation_date": "2026-11-22",
+        "change_1d": -3.72,
+        "change_1w": -3.58,
+        "change_1m": -21.24,
+        "source": "Yahoo Finance",
+        "source_url": "https://finance.yahoo.com/quote/BZ=F",
+        "status": "ok"
+      },
+      "copper": {
+        "name": "Copper",
+        "value": 5.5565,
+        "unit": "USD/lb",
+        "observation_date": "2026-11-22",
+        "change_1d": 1.45,
+        "change_1w": -7.35,
+        "change_1m": -12.67,
+        "source": "Yahoo Finance",
+        "source_url": "https://finance.yahoo.com/quote/HG=F",
+        "status": "ok"
+      },
+      "us2y": {
+        "name": "US 2Y",
+        "value": 4.63,
+        "unit": "%",
+        "observation_date": "2026-11-20",
+        "change_1d": -2.73,
+        "change_1w": -5.12,
+        "change_1m": -3.34,
+        "source": "U.S. Department of the Treasury",
+        "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
+        "status": "ok",
+        "change_1d_bp": -13.0,
+        "change_1w_bp": -25.0,
+        "change_1m_bp": -16.0
+      },
+      "us10y": {
+        "name": "US 10Y",
+        "value": 4.92,
+        "unit": "%",
+        "observation_date": "2026-11-20",
+        "change_1d": -2.38,
+        "change_1w": -4.47,
+        "change_1m": -3.91,
+        "source": "U.S. Department of the Treasury",
+        "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
+        "status": "ok",
+        "change_1d_bp": -12.0,
+        "change_1w_bp": -23.0,
+        "change_1m_bp": -20.0
+      },
+      "au2y": {
+        "name": "AU 2Y",
+        "value": 4.813,
+        "unit": "%",
+        "observation_date": "2026-11-18",
+        "change_1d": -1.01,
+        "change_1w": 0.12,
+        "change_1m": -0.76,
+        "source": "Reserve Bank of Australia — F2",
+        "source_url": "https://www.rba.gov.au/statistics/tables/",
+        "status": "ok",
+        "change_1d_bp": -4.9,
+        "change_1w_bp": 0.6,
+        "change_1m_bp": -3.7
+      },
+      "au10y": {
+        "name": "AU 10Y",
+        "value": 5.08,
+        "unit": "%",
+        "observation_date": "2026-11-18",
+        "change_1d": -1.07,
+        "change_1w": 0.71,
+        "change_1m": -2.78,
+        "source": "Reserve Bank of Australia — F2",
+        "source_url": "https://www.rba.gov.au/statistics/tables/",
+        "status": "ok",
+        "change_1d_bp": -5.5,
+        "change_1w_bp": 3.6,
+        "change_1m_bp": -14.5
+      }
+    }
   }
 ]
